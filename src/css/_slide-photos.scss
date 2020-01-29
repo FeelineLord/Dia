@@ -1,0 +1,40 @@
+.slide-photos {
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &__photo-1 {
+    width: 70vw;
+    height: $slide-photo-height;
+  }
+
+  &__inscription {
+    position: absolute;
+    left: 6vw;
+    top: 28vw;
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: $text-transform;
+    color: $perceptible-text-color;
+    max-width: 32vw;
+  }
+
+  &__text {
+    position: absolute;
+    left: 6vw;
+    top: 30vw;
+    font-weight: 900;
+    font-size: 20px;
+    color: $main-text-color;
+    line-height: 140%;
+    max-width: 32vw;
+  }
+}
+
+.slider-effect {
+  width: 4vw;
+  height: $slide-photo-height;
+  background-color: $first-bgcolor;
+}

@@ -1,0 +1,42 @@
+.light-nav {
+  width: 35vw;
+
+  &__list {
+    width: 35vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__link {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    color: $standard-text-color;
+    position: relative;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+
+    &:hover {
+      color: $first-elements-color;
+    }
+
+    &:after {
+      position: absolute;
+      left: -5%;
+      top: 28px;
+      content: "";
+      height: 4px;
+      width: 110%;
+      border-radius: 6px;
+      background-color: $first-elements-color;
+      display: none;
+    }
+
+    &:active:after {
+      display: block;
+    }
+  }
+}
