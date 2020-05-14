@@ -1,3 +1,3 @@
 # Dia landing page
 
-Link:
+Link: https://feelinelord.github.io/Dia/
